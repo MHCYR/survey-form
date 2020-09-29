@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<title>Survey</title>
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<header>
@@ -12,16 +12,16 @@
 			<p id="description">Web survey form prototype</p>
 		</header>
 		<form id="survey-form">
-			<label id="name-label" for="name">Name:</label><br />
-			<input type="text" id="name" name="name" placeholder="Enter yout name" /><br />
-			<label id="email-label" for="email">e-mail:</label><br />
-			<input type="email" id="email" name="email" placeholder="Enter yor email" /><br />
-			<label id="number-label" for="age">Age:</label><br />
+			<label id="name-label" class="labels" for="name">Name:</label><br />
+			<input type="text" id="name" name="name" placeholder="Enter yout name" required /><br />
+			<label id="email-label" class="labels" for="email">e-mail:</label><br />
+			<input type="email" id="email" name="email" placeholder="Enter yor email" required /><br />
+			<label id="number-label" class="labels" for="age">Age:</label><br />
 			<input
 				type="number"
 				id="number"
 				name="age"
-				min="1"
+				min="16"
 				max="99"
 				placeholder="Enter your age"
 			/><br />
@@ -30,32 +30,31 @@
 				<select id="dropdown" name="hobby">
 					<option disabled selected value>Select an activity</option>
 					<option value="reading">Reading</option>
-					<option value="bird-watching">Bird waching</option>
+					<option value="bird-watching">Bird watching</option>
 					<option valule="gardening">Gardening</option>
 					<option value="programming">Programming</option>
 				</select>
 			</div>
 			<div class="multiple-option">
 				<p>Select how many hours per week do you spend in your favorite activity</p>
-				<label for="1-3"><input type="radio" name="1-3" />1 - 3 hours</label>
-				<label for="3-6"><input type="radio" name="3-6" />1 - 6 hours</label>
-				<label for="+6"><input type="radio" name="+6" />+6 hours</label>
+				<label><input value="1-3" type="radio" name="hours" checked />1 - 3 hours</label>
+				<label><input value="3-6" type="radio" name="hours" />1 - 6 hours</label>
+				<label><input value="+6" type="radio" name="hours" />+6 hours</label>
 			</div>
-			<div id="multiple-option">
+			<div class="multiple-option">
 				<p>
-					What days of the week do you do your favorite activity?<span id="clue"
-						>(You can select more than one)</span
-					>
+					What days of the week do you do your favorite activity?
+					<span id="clue">(You can select more than one)</span>
 				</p>
-				<label for="monday"><input type="checkbox" name="monday" />Monday</label>
-				<label for="tuesday"><input type="checkbox" name="tuesday" />Tuesday</label>
-				<label for="wednesday"><input type="checkbox" name="wednesday" />Wednesday</label>
-				<label for="thursday"><input type="checkbox" name="thursday" />Thursday</label>
-				<label for="friday"><input type="checkbox" name="friday" />Friday</label>
-				<label for="saturday"><input type="checkbox" name="saturday" />Saturday</label>
-				<label for="sunday"><input type="checkbox" name="sunday" />Sunday</label>
+				<label><input value="monday" type="checkbox" name="week" />Monday</label>
+				<label><input value="tuesday" type="checkbox" name="week" />Tuesday</label>
+				<label><input value="wednesday" type="checkbox" name="week" />Wednesday</label>
+				<label><input value="thursday" type="checkbox" name="week" />Thursday</label>
+				<label><input value="friday" type="checkbox" name="week" />Friday</label>
+				<label><input value="saturday" type="checkbox" name="week" />Saturday</label>
+				<label><input value="sunday" type="checkbox" name="week" />Sunday</label>
 			</div>
-			<div id="multiple-option">
+			<div class="multiple-option">
 				<p>Any comments or suggestions?</p>
 				<textarea
 					id="comments"
@@ -64,9 +63,10 @@
 					placeholder="Enter your comment here..."
 				></textarea>
 			</div>
-			<div class="multiple-option">
+			<div class="multiple-option submit-div">
 				<button type="submit" id="submit" class="submit-button">Submit</button>
 			</div>
 		</form>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
 </html>

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&display=swap");
+
+body {
+	background-image: url("https://4.bp.blogspot.com/-YgQcHYRY89M/W_SeMR07lLI/AAAAAAAALmE/2-FkTU68GAkOdGSQDx41cK1wbTfMyYYLACLcBGAs/s1600/fabric%2Bsports%2Bdark%2Bpurple%2Btexture%2B3888%2Bx%2B2592.jpg");
+}
+
+header {
+	font-family: "Spectral", serif;
+	color: yellow;
+}
+
+#title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 50px;
+}
+
+#description {
+	text-align: center;
+	font-weight: 600;
+	font-size: 25px;
+}
+
+#survey-form {
+	background-color: rgba(46, 36, 158, 0.5);
+	width: 80%;
+	margin: auto;
+	border: solid yellow 3px;
+	border-radius: 20px;
+	padding: 10px 10px;
+	font-family: "Spectral", serif;
+	color: #fbffbe;
+}
+
+.labels {
+	font-size: 17px;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#comments {
+	width: 95%;
+	height: 25px;
+	margin-bottom: 20px;
+	font-family: "Spectral", serif;
+	font-size: 15px;
+}
+
+#dropdown {
+	height: 30px;
+}
+
+.multiple-option p {
+	font-size: 17px;
+}
+
+.multiple-option label {
+	display: block;
+}
+
+#clue {
+	font-size: 0.7em;
+}
+
+.submit-div {
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	width: 70%;
+	height: 25px;
+	margin-bottom: 20px;
+	font-family: "Spectral", serif;
+	font-size: 15px;
+	padding: 20px 0px;
+	line-height: 0px;
+	background-color: #af18ba;
+	border-radius: 15px;
+	border: 0px;
+	transition: transform 0.3s;
+	color: #fbffbe;
+}
+
+button:hover {
+	transform: scale(1.1, 1.1);
+	text-decoration: underline;
+	cursor: pointer;
+}
